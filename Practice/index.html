@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <style>
+        body {
+            background-color: #f3f4f6;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .card {
+            max-width: 350px;
+            margin: auto;
+            background-color: white;
+            border: 1px solid #d1d5db;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .dropdown-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 6px;
+            border-radius: 8px;
+        }
+
+        .dropdown-btn:hover {
+            background-color: #f3f4f6;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 40px;
+            right: 10px;
+            background-color: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 160px;
+            z-index: 10;
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 10px 16px;
+            text-decoration: none;
+            font-size: 14px;
+            color: #374151;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #f3f4f6;
+        }
+
+        .dropdown-menu a.delete {
+            color: #dc2626;
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .profile img {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            margin-bottom: 12px;
+        }
+
+        .profile h5 {
+            font-size: 20px;
+            margin: 0;
+            color: #111827;
+        }
+
+        .profile span {
+            font-size: 14px;
+            color: #6b7280;
+        }
+
+        .actions {
+            margin-top: 16px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .actions a {
+            padding: 8px 16px;
+            font-size: 14px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 0 4px;
+        }
+
+        .add-friend {
+            background-color: #1d4ed8;
+            color: white;
+        }
+
+        .add-friend:hover {
+            background-color: #1e40af;
+        }
+
+        .message {
+            background-color: white;
+            border: 1px solid #d1d5db;
+            color: #374151;
+        }
+
+        .message:hover {
+            background-color: #f3f4f6;
+            color: #1d4ed8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="profile">
+            <img id="pic" src="" alt="Profile Photo">
+            <h5 id="name"></h5>
+            <span id="followers"></span>
+            <div class="actions">
+                <a href="" class="add-friend">Follow</a>
+                <!-- <a href="#" class="message">View</a> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
